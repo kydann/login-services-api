@@ -1,0 +1,191 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Productos</h3>
+        </div>
+        <div class="card-body">
+
+            <table align="center" style="width: 100%;">
+                <tr>
+                    <td>Cliente</td>
+                    <td>Fecha</td>
+                    <td>Numero de Operacion</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td>{{prod.cliente}}</td>
+                    <td>{{prod.fecha}}</td>
+                    <td>{{prod.no_operacion}}</td>
+                </tr>
+
+                <tr>
+                    <td>Pedido</td>
+                    <td></td>
+                    <td>Ref. SAE</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td>{{prod.pedido}}</td>
+                    <td></td>
+                    <td>{{prod.ref_sae}}</td>
+                </tr>
+
+            </table>
+
+            <hr />
+            <br />
+
+            <table align="center" style="width: 100%; margin:  5px;">
+                <tr>
+                    <td>Producto</td>
+                    <td>Color</td>
+                    <td>Pigmentado</td>
+                    <td>SAE</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td>{{prod.producto}}</td>
+                    <td>{{prod.color}}</td>
+                    <td>{{prod.pigmentado}}</td>
+                    <td>{{prod.sae}}</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table align="center" style="width: 100%;">
+                <tr>
+                    <td>Cantidad</td>
+                    <td>Clave</td>
+                    <td>Factor Conversion</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td>{{prod.cantidad}}</td>
+                    <td>{{prod.clave}}</td>
+                    <td>{{prod.factor_conversion}}</td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table style="width: 100%;">
+                <tr>
+                    <td><h5>Presentacion del prodo</h5></td>
+                    <td><h5>Empaque</h5></td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table align="center" style="width: 100%;">
+                <tr>
+                    <td></td>
+                    <td>Piezas</td>
+                    <td>Caja</td>
+                    <td>Bolsa</td>
+                    <td>Clave empaque</td>
+                    <td>Observaciones</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td><h5>Paquetes</h5></td>
+                    <td>{{prod.piezas}}</td>
+                    <td>{{prod.caja}}</td>
+                    <td>{{prod.bolsa}}</td>
+                    <td>{{prod.clave_empaque}}</td>
+                    <td>{{prod.observaciones}}</td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <h2>Insumos</h2>
+                    </td>
+                </tr>
+            </table>
+
+            <table align="center" style="width: 400px;">
+                <tr>
+                    <td>Descripcion</td>
+                    <td>Cantidad insumos</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td>{{prod.descripcion}}</td>
+                    <td>{{prod.cant_insumos}}</td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <h2>Materia Prima</h2>
+                    </td>
+                </tr>
+            </table>
+
+            <table align="center" style="width: 100%;">
+                <tr>
+                    <td>Concepto</td>
+                    <td>Cantidad</td>
+                    <td>Descripcion</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td></td>
+                    <td>{{prod.cant_arr_maquina}}</td>
+                    <td>{{prod.desc_arr_maquina}}</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td></td>
+                    <td>{{prod.cant_produccion}}</td>
+                    <td>{{prod.desc_produccion}}</td>
+                </tr>
+                <tr *ngFor="let prod of prod">
+                    <td></td>
+                    <td>{{prod.cant_total_mat_prima}}</td>
+                    <td>{{prod.desc_total_mat_prima}}</td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table>
+                <tr *ngFor="let prod of prod">
+                    <td>Observaciones: </td>
+                    <td>{{prod.observaciones_gral}}</td>
+                </tr>
+            </table>
+
+            <br /><br /><br /><br /><br /><br />
+
+            <table align="center" style="width: 100%; align-content: center;">
+                <tr>
+                    <td align="center">
+                        Elaboro:__________________________________________
+                    </td>
+
+                    <td>
+                        __________________________________________
+                    </td>
+                </tr>
+                <br />
+                <br />
+            </table>
+            <table align="right">
+                <tr align="center" style="width: 250px;">
+                    <td>
+                        <button class="btn btn-warning">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>

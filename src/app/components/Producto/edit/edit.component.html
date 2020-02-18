@@ -1,0 +1,324 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Producto</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                  <label for="">Cliente:</label>
+                  <input [(ngModel)]="producto.cliente" name="cliente" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Fecha:</label>
+                  <input [(ngModel)]="producto.fecha" name="fecha" type="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">No.operacion:</label>
+                    <input [(ngModel)]="producto.no_operacion" name="no_operacion" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Pedido:</label>
+                    <input [(ngModel)]="producto.pedido" name="Pedido" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Referencia SAE:</label>
+                    <input [(ngModel)]="producto.ref_sae" name="ref_sae" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Producto:</label>
+                    <input [(ngModel)]="producto.producto" name="producto" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Color:</label>
+                    <input [(ngModel)]="producto.color" name="color" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Pigmentado:</label>
+                    <input [(ngModel)]="producto.pigmentado" name="pigmentado" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">SAE:</label>
+                    <input [(ngModel)]="producto.sae" name="sae" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Cantidad:</label>
+                    <input [(ngModel)]="producto.cantidad" name="Cantidad" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Clave:</label>
+                    <input [(ngModel)]="producto.clave" name="clave" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Factor Conversion:</label>
+                    <input [(ngModel)]="producto.factor_conversion" name="factor_conversion" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Piezas:</label>
+                    <input [(ngModel)]="producto.piezas" name="piezas" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Caja:</label>
+                    <input [(ngModel)]="producto.caja" name="caja" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Bolsa:</label>
+                    <input [(ngModel)]="producto.bolsa" name="bolsa" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Clave Empaque:</label>
+                    <input [(ngModel)]="producto.clave_empaque" name="clave_empaque" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Observaciones:</label>
+                    <input [(ngModel)]="producto.observaciones" name="observaciones" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Descripcion:</label>
+                    <input [(ngModel)]="producto.descripcion" name="descripcion" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Cantidad de Insumos:</label>
+                    <input [(ngModel)]="producto.cant_insumos" name="cant_insumos" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Cantidad arranque de maquina:</label>
+                    <input [(ngModel)]="producto.cant_arr_maquina" name="cant_arr_maquina" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Descripcion arranque de maquina:</label>
+                    <input [(ngModel)]="producto.desc_arr_maquina" name="desc_arr_maquina" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Cantidad Produccion:</label>
+                    <input [(ngModel)]="producto.cant_produccion" name="cant_produccion" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Descripcion Produccion:</label>
+                    <input [(ngModel)]="producto.desc_produccion" name="desc_produccion" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Cantidad total de materia Prima:</label>
+                    <input [(ngModel)]="producto.cant_total_mat_prima" name="cant_total_mat_prima" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Descripcion total de materia Prima:</label>
+                    <input [(ngModel)]="producto.desc_total_mat_prima" name="desc_total_mat_prima" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Observaciones en general:</label>
+                    <input [(ngModel)]="producto.observaciones_gral" name="observaciones_gral" type="text" class="form-control">
+                  </div>
+                  <button (click)="Actualizar(producto)" class="btn btn-danger">Actualizar</button>
+              </form>
+              <!--
+            <table align="center">
+                <tr>
+                    <td>
+                        <input placeholder="Cliente">
+                    </td>
+
+                    <td>
+                        <input placeholder="Fecha">
+                    </td>
+
+                    <td>
+                        <input placeholder="No. de Op.">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input placeholder="Pedido">
+                    </td>
+
+                    <td>
+                        <input placeholder="Referencia SAE">
+                    </td>
+                </tr>
+
+            </table>
+
+            <hr />
+            <br />
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <input placeholder="Producto">
+                    </td>
+                    <td>
+                        <input placeholder="Color">
+                    </td>
+                    <td>
+                        <input placeholder="Pigmentado">
+                    </td>
+                    <td>
+                        <input placeholder="SAE">
+                    </td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <input placeholder="Cantidad">
+                    </td>
+                    <td>
+                        <input placeholder="Clave">
+                    </td>
+                    <td>
+                        <input placeholder="Factor conversion">
+                    </td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table>
+                <tr>
+                    <td>
+                        <h4>Presentacion del Producto</h4>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td align="right">
+                        <h4>Empaque</h4>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table align="center">
+                <tr>
+                    <td>
+                        <h4>Paquetes</h4>
+                    </td>
+                    <td>
+                        <input size="10px" placeholder="Piezas">
+                    </td>
+                    <td>
+                        <input placeholder="Caja">
+                    </td>
+                    <td>
+                        <input placeholder="Bolsa">
+                    </td>
+                    <td>
+                        <input placeholder="Clave empaque">
+                    </td>
+                    <td>
+                        <input placeholder="Observaciones">
+                    </td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <h2>Insumos</h2>
+                    </td>
+                </tr>
+            </table>
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <input placeholder="Descripcion">
+                    </td>
+                    <td>
+                        <input placeholder="Cantidad Insumos">
+                    </td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <h2>Materia Prima</h2>
+                    </td>
+                </tr>
+            </table>
+
+            <table align="center">
+                <tr>
+                    <td>Concepto</td>
+                    <td>Cantidad</td>
+                    <td>Descripcion</td>
+                </tr>
+                <tr>
+                    <td>Arranque de Maquina</td>
+                    <td>
+                        <input placeholder="Cantidad arranque maquina">
+                    </td>
+                    <td>
+                        <input placeholder="Descripcion arranque maquina">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Produccion</td>
+                    <td>
+                        <input placeholder="Cantidad Produccion">
+                    </td>
+                    <td>
+                        <input placeholder="Descripcion Produccion">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total de materia prima</td>
+                    <td>
+                        <input placeholder="Cantidad total materia prima">
+                    </td>
+                    <td>
+                        <input placeholder="Descripcion total materia prima">
+                    </td>
+                </tr>
+            </table>
+
+            <hr />
+            <br />
+
+            <table>
+                <tr>
+                    <td>Observaciones: </td>
+                    <td>
+                        <input size="100%" placeholder="Observaciones">
+                    </td>
+                </tr>
+            </table>
+
+            <br /><br /><br /><br /><br /><br />
+
+            <table align="center" style="width: 100%; align-content: center;">
+                <tr>
+                    <td align="center">
+                        Elaboro:__________________________________________
+                    </td>
+
+                    <td>
+                        __________________________________________
+                    </td>
+                </tr>
+                <br />
+                <br />
+            </table>
+            <table align="right">
+                <tr align="center" style="width: 250px;">
+                    <td>
+                        <button class="btn btn-warning">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </table>-->
+        </div>
+    </div>
+</div>
